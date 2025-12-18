@@ -75,25 +75,25 @@
 
         const PARTS_DATABASE = {
             ENGINE: [
-                { name: "Advanced Engine", stats: { T3: 1, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 1, UltCharge: 20, SlipStreamSpd: 3.5 } },
+                { name: "Advanced Engine", stats: { T3: 1, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 1, SlipStreamRadius: 20, SlipStreamSpd: 3.5 } },
                 { name: "Banker Engine", stats: { BoostPads: 10, T2: -0.5, StartBoost: -5, StartCoins: 3, MaxCoins: 10, MaxCoinsSpd: 2, DriftSteer: -2, Steer: -2, Speed: -0.2 } },
                 { name: "Basic Engine", stats: { Speed: 0.5 } },
-                { name: "Scrapwork Engine", stats: { T1: -0.8, T2: -1, T3: 0.5, DriftSteer: -5, Steer: -4, Speed: 1.6, UltCharge: 35, SlipStreamRadius: 2 } },
+                { name: "Scrapwork Engine", stats: { T1: -0.8, T2: -1, T3: 0.5, DriftSteer: -5, Steer: -4, Speed: 1.6, SlipStreamRadius: 35, SlipStreamSpdSpd: 2 } },
                 { name: "Chrome Engine", stats: { T3: 1.6, StartBoost: 10, Speed: 0.5 } },
-                { name: "Clean Engine", stats: { T1: 0.4, T2: 0.5, DriftSteer: 0.5, Steer: 0.5, UltCharge: 100, TrickSpd: 5 } },
-                { name: "Cyber Engine", stats: { T3: 1.2, DriftSteer: 0.5, Steer: 0.5, Speed: 0.5, TrickSpd: 5 } },
-                { name: "Featherweight Engine", stats: { T1: 0.8, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 0.3, SlowAreaPenalty: -12, UltCharge: 30, TrickSpd: 5 } },
-                { name: "Fresh Engine", stats: { BoostPads: 4, DriftSteer: 0.2, Speed: 0.3, TrickSpd: 3.2 } },
-                { name: "Frontrunner Engine", stats: { T3: 1, StartBoost: 15, CoinBoostSpd: 10, CoinBoostTime: 0.5, StartCoins: 1, MaxCoinsSpd: -1, DriftSteer: 1.4, Speed: -0.2 } },
+                { name: "Clean Engine", stats: { T1: 0.4, T2: 0.5, DriftSteer: 0.5, Steer: 0.5, SlipStreamRadius: 100, TrickSpd: 5 } },
+                { name: "Cyber Engine", stats: { T3: 1.2, DriftSteer: 0.5, Steer: 0.5, Speed: 0.5, SlipStreamSpd: 5 } },
+                { name: "Featherweight Engine", stats: { T1: 0.8, DriftSteer: 1, Steer: 1, AirDriftTime: 0.2, Speed: 0.3, Daze: -12, SlipStreamRadius: 30, TrickSpd: 5 } },
+                { name: "Fresh Engine", stats: { BoostPads: 4, MaxCoinsSpd: 0.2, Speed: 0.3, TrickSpd: 3.2 } },
+                { name: "Frontrunner Engine", stats: { T3: 1, StartBoost: 15, CoinBoostSpd: 10, CoinBoostTime: 0.5, StartCoins: 1, MaxCoins: -1, MaxCoinsSpd: 1.4, Speed: -0.2 } },
                 { name: "Spooky Engine", stats: { T1: 0.6, StartBoost: 10, Speed: 0.6, TrickSpd: 3 } },
-                { name: "Heavyweight Engine", stats: { CoinBoostSpd: 5, CoinBoostTime: 0.5, StartCoins: 2, MaxCoins: 5, MaxCoinsSpd: 0.8, DriftSteer: -4.5, Steer: -3.5, Speed: 1.3, SlowAreaPenalty: 50, TrickSpd: -3 } },
-                { name: "Vulcan Engine", stats: { DriftRate: 2.5, T3: 1, StartCoins: -1, MaxCoins: 0.5, DriftSteer: -0.5, Steer: -2, Speed: 0.5, SlowAreaPenalty: 100 } },
+                { name: "Heavyweight Engine", stats: { CoinBoostSpd: 5, CoinBoostTime: 0.5, StartCoins: 2, MaxCoins: 5, MaxCoinsSpd: 0.8, DriftSteer: -4.5, Steer: -3.5, Speed: 1.3, Daze: 50, TrickSpd: -3 } },
+                { name: "Vulcan Engine", stats: { DriftRate: 2.5, T3: 1, MaxCoins: -1, MaxCoinsSpd: 0.5, DriftSteer: -0.5, Steer: -2, Speed: 0.5, Daze: 100 } },
                 { name: "No Coiner Engine", stats: { T2: 1.5, T3: 1, CoinBoostSpd: -10, MaxCoins: -2, MaxCoinsSpd: -5.2, Speed: 3.2, TrickSpd: 4 } },
                 { name: "Piggybank Engine", stats: { StartCoins: 2, MaxCoins: 10, MaxCoinsSpd: 4.5, Speed: -2.7 } },
                 { name: "Scrap Engine", stats: { T1: 0.4, T2: 0.5, T3: 0.5, TrickSpd: 3.5 } },
                 { name: "Silver Engine", stats: { T1: 0.5, T2: 0.7, T3: 1.4 } },
-                { name: "Snail Engine", stats: { BoostPads: 10, Speed: -2.5, Steer: 50, AirDriftTime: -30, DriftRate: 8, SlowAreaPenalty: 18, Daze: 30, UltCharge: 7, SlipStreamRadius: 0.8 } },
-                { name: "Starter Engine", stats: { T1: 0.8, CoinBoostTime: 1, DriftSteer: 0.6, Speed: 0.6 } }
+                { name: "Snail Engine", stats: { BoostPads: 10, Speed: -2.5, SlowAreaPenalty: 50, Daze: -30, UltCharge: 8, UltStart: 18, SlipStreamRadius: 30, SlipStreamSpd: 7, SlipTime: 0.8 } },
+                { name: "Starter Engine", stats: { T1: 0.8, CoinBoostTime: 1, MaxCoinsSpd: 0.6, Speed: 0.6 } }
             ],
             EXHAUST: [
                 { name: "Acrobatic Exhaust", stats: { CoinBoostTime: 1, DriftSteer: 1.2, Steer: 1.2, AirDriftTime: 0.13, TrickSpd: 2 } },
@@ -359,3 +359,4 @@
     </script>
 </body>
 </html>
+
