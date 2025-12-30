@@ -894,7 +894,7 @@ st.set_page_config(page_title="OBK Gear Optimiser", layout="wide")
 st.markdown(APP_CSS, unsafe_allow_html=True)
 
 st.title("OBK Gear Optimiser")
-st.caption("Select the equipment in your inventory in the sidebar. 'View details' opens inline Stats Summary.")
+st.caption("By Ellyess. Optimise the equipment you own in Oh Baby Kart. 'View details' opens inline Stats Summary.")
 
 missing = [c for c in CATEGORIES if c not in PARTS_DATABASE]
 if missing:
