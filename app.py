@@ -1,14 +1,12 @@
-# app.py
-
 """
-Application: Kart Build Optimiser
+Application: OBK Gear Optimiser
 Author: Ellyess
 Date: 2025-12-30
 Description:
     A Streamlit app to optimise kart builds based on user-defined priorities and constraints.
 Run:
     conda create -f environment.yaml
-    conda activate kart-optimiser
+    conda activate OBK-gear
     streamlit run app.py
 """
 

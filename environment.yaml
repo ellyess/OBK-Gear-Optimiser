@@ -1,4 +1,4 @@
-name: kart-optimizer
+name: OBK-gear
 channels:
   - conda-forge
 dependencies:
