@@ -1,16 +1,11 @@
 # OBK Gear Optimiser
-
 A visual build optimiser for OBK setups. Scoring and statistics based on <https://tarawoy.github.io/OBKGear/>.
 
 Designed to explore optimal combinations of parts based on player priorities, constraints, and owned equipment.
 
----
-
 ## Features
-
 - **Part-based optimisation**
   - Engine, Exhaust, Suspension, Gearbox, Trinkets
-  - Always enforces **2 unique trinkets**
 - **Priority-based scoring**
   - Race
   - Coin
@@ -24,7 +19,6 @@ Designed to explore optimal combinations of parts based on player priorities, co
   - Ranked build list
   - Expandable per-build stat breakdown
 - **CSV export**
-
 ---
 
 ## How It Works
@@ -49,9 +43,8 @@ You control how important each category is using **Low / Medium / High** priorit
 
 ---
 
-## ⚙️ Installation
+## Usage
 
-### 1. Create the environment
 ```bash
 conda env create -f environment.yaml
 conda activate OBK-gear
